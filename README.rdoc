@@ -1,28 +1,14 @@
-== README
+Making rails forms simple.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple Form was designed to a helpful gem that can be customized to fit your wants and needs. It is a stack of components that when used displays a complete html form which by default contains labels and input fields, etc.
 
-Things you may want to cover:
+----------------------
+Add it to your Gemfile:
 
-* Ruby version
+gem 'simple_form'
+Run the following command to install it:
 
-* System dependencies
+bundle install
+Run the generator:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+rails generate simple_form:install

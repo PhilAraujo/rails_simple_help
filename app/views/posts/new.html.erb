@@ -1,13 +1,26 @@
 <h1>Post Here</h1>
 
 <%= simple_form_for @post do |f| %>
+  <%= f.label :title %>
+  <%= f.input_field :body %><br>
+  <%= f.hint 'No special characters, please!' %>
+  <%= f.error :body, id: 'user_name_error' %>
+  <%= f.full_error :token %>
+  <%= f.submit 'Save' %>
+<% end %>
+
+
+
+
+
+<!--<%= simple_form_for @post do |f| %>
   <%= f.input :title %><br>
   <%= f.input :body %><br>
   <%= f.button :submit %>
 <% end %>
 
 
-<!-- <%= form_for @post do |f| %>
+ <%= form_for @post do |f| %>
 	<%= f.label :title %><br>
 	<%= f.text_field :title %><br>
 	<%= f.label :body %><br>
