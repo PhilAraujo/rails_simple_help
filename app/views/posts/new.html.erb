@@ -1,9 +1,16 @@
 <h1>Post Here</h1>
 
-<%= form_for @post do |f| %>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title %><br>
+  <%= f.input :body %><br>
+  <%= f.button :submit %>
+<% end %>
+
+
+<!-- <%= form_for @post do |f| %>
 	<%= f.label :title %><br>
 	<%= f.text_field :title %><br>
 	<%= f.label :body %><br>
 	<%= f.text_area :body %><br>
 	<%= f.submit "Submit" %>
-	<% end %>
+	<% end %> -- >

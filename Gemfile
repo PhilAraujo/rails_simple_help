@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 
 # Easy was to create forms
 gem 'simple_form'
-# Simple happy birthday method
-gem 'a1447ll_hpbd'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
