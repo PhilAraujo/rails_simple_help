@@ -1,6 +1,12 @@
 <h1>Post Here</h1>
 
 <%= simple_form_for @post do |f| %>
+  <%= f.input :title, input_html: { class: 'special' } %><br>
+  <%= f.input :body, input_html: { maxlength: 20 } %><br>
+  <%= f.button :submit %>
+<% end %>
+
+<!-- <%= simple_form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.input_field :body %><br>
   <%= f.hint 'No special characters, please!' %>
@@ -9,11 +15,7 @@
   <%= f.submit 'Save' %>
 <% end %>
 
-
-
-
-
-<!--<%= simple_form_for @post do |f| %>
+<%= simple_form_for @post do |f| %>
   <%= f.input :title %><br>
   <%= f.input :body %><br>
   <%= f.button :submit %>

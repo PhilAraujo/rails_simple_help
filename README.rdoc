@@ -12,3 +12,13 @@ bundle install
 Run the generator:
 
 rails generate simple_form:install
+
+-----------------------
+
+To use Simple Form, use the helper it provides:
+
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.button :submit %>
+<% end %>
